@@ -22,13 +22,13 @@ It differs among different analysed groups (e.g. departments) and different sati
 For the hardware setup, you first assemble the raspberry with power and cover.
 
 Then you prepare the periphery with the breadboard, the LEDs, the buttons and the jumper wires. You need as many buttons as you have groups + satisfication levels. The number of LEDs is the number of groups (depicting which group is selected) + a status LED.<br>
-You connect the buttons with the jumpers to different raspberry GPIOs, supplied with 5 V and a resistor in the curcuit.
+You connect the buttons with the jumpers to different raspberry GPIOs, supplied with 5 V and a resistor in the circuit.
 
 $R=\frac{U}{I}=\frac{5 V}{0.015 A} \approx 330 Ω$
 
-The LEDs you put into a curcuit between switchable GPIO and GND with a current limiting resistor.
+The LEDs you put into a circuit between switchable GPIO and GND with a current limiting resistor.
 
-$R=\frac{U}{I}=\frac{5 V-2 V}{0.015 A} \approx 220 Ω$
+$R=\frac{U}{I}=\frac{3.3 V-2 V}{0.006 A} \approx 220 Ω$
 
 GPIO-Pinout:
 
