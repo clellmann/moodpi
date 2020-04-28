@@ -17,7 +17,7 @@ if __name__ == "__main__":
     try:
         mood_pi = MoodPi(GROUP_BUTTON_GPIOS, GROUP_NAMES, 
                         GROUP_LED_GPIOS, MOOD_GPIOS, MOOD_NAMES)
-
+        mood_pi.prepare()
         mood_pi.run()
     except:
         GPIO.output(STATUS_LED_GPIO, GPIO.HIGH)

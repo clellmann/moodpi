@@ -48,3 +48,12 @@ In the end it can look like this:
 ### Setup
 
 For the software setup, you first [initialize](https://www.raspberrypi.org/documentation/installation/installing-images/README.md) the raspberry with the latest raspbian version.
+
+In `main.py` change the GPIO globals to your setup and the name globals to your group and mood names stored.<br>
+Subsequently, you can use `main.py` to start the MoodPi by typing `python3 main.py` on your raspberry.
+
+The buttons will be evaluated every 500 ms. If a mood is stored, the input is blocked for 5 s for the reason of not storing to many moods with the evaluation cycle.
+
+In case of exception the status LED is iluminated 10 s before automatic restart.
+
+To start the program with raspberry reboot enter `@reboot python3 <path>/main.py` to `crontab -e`.
