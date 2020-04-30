@@ -36,7 +36,7 @@ GPIO-Pinout:
 
 In the end it can look like this:
 
-![periphery](./img/periphery.jpg)
+![hardware](./img/hardware.jpg)
 
 ## Software
 
