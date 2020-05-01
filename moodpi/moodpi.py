@@ -44,6 +44,8 @@ class MoodPi():
             GPIO.output(gpio, GPIO.LOW)
         for gpio in self.mood_gpios:
             GPIO.setup(gpio, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+        self.group_states[0] = 1
+        GPIO.output(self.group_led_gpios[0], GPIO.HIGH)
 
     def run(self):
         """Main method for MoodPi runs (500 ms cycle)
